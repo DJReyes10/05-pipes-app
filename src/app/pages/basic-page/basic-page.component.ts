@@ -42,6 +42,7 @@ export default class BasicPageComponent {
   changeLocale(locale: availableLocale) {
     console.log(locale);
     this.localservice.changeLocale(locale);
+    window.location.reload(); // Recargar la página para aplicar el nuevo locale
   }
 
   //TODO: Este es otro metodo que se puede usar para limpiar el efecto
